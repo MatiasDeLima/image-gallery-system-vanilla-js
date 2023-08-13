@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/styles/style.css">
+
+    <title>Image Gallery</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#hero" class="nav__logo">
+                Gallery
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Contact us</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Features</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Images</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero" id="hero">
+            <img src="./src/images/hero-image.jpg" alt="hero image" class="hero__bg">
+            <div class="hero__shadow"></div>
+
+            <div class="hero__container container grid">
+                <div class="hero__data">
+                    <h1 class="hero__title">
+                        Search the best images <br>for your project.
+                    </h1>
+
+                    <p class="hero__description">
+                        Unlock Creativity with Our Vast Image Bank: Discover a 
+                        treasure trove of high-quality and diverse visuals at our 
+                        image repository.
+                    </p>
+
+                    <form action="search.html" class="hero__form">
+                        <input type="search" name="search" autocomplete="off" class="search__input" id="search-input" placeholder="Search a image...">
+                        <button type="submit" class="button search__button">
+                            <i class="ri-search-line"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="hero__images">
+                    <div class="hero__image-content">
+                        <img src="./src/images/image-004.jpg" alt="info image">
+                    </div>
+
+                    <div class="hero__image-content">
+                        <img src="./src/images/image-002.jpg" alt="info image">
+                    </div>
+
+                    <div class="hero__image-content">
+                        <img src="./src/images/image-003.jpg" alt="info image">
+                    </div>
+
+                    <div class="hero__image-content">
+                        <img src="./src/images/image-005.jpg" alt="info image">
+                    </div>
+
+                    <div class="hero__image-content">
+                        <img src="./src/images/image-006.jpg" alt="info image">
+                    </div>
+
+                    <div class="hero__image-content">
+                        <img src="./src/images/image-007.jpg" alt="info image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="image__modal modal-hiden">
+            <div class="modal__close" id="modal-close">
+                <i class="ri-close-line"></i>
+            </div>
+            <a href="#" target="_blank" class="download-button">Download</a>
+
+            <img src="./src/images/image-006.jpg" alt="" class="modal__image">
+
+            <div class="modal__buttons">
+                <div class="arrow__button next">
+                    <i class="ri-arrow-left-line"></i>
+                </div>
+
+                <div class="arrow__button prev">
+                    <i class="ri-arrow-right-line"></i>
+                </div>
+            </div>
+        </div>
+
+        <section class="gallery section" id="gallery">
+            <div class="gallery__container container grid">
+                <!--<img src="./src/images/image-004.jpg" alt="" class="result__image">-->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
